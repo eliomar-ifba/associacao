@@ -44,7 +44,9 @@ public class App {
         fun.setNome("Márcia");
         fun.setCargo("Recepcionista");
 
-        Paciente paciente = new Paciente(1, "Bia");
+        Paciente paciente = new Paciente();
+        paciente.setId(1);
+        paciente.setNome("Jonh Doe");
 
         Medicamento medicamento1 = new Medicamento(2, "Diazepan", "se acalma", "3 em 3 horas"); 
         Medicamento medicamento2 = new Medicamento(5, "AS", "Sei não", "12 em 12 horas"); 

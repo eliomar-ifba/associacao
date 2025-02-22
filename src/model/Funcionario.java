@@ -1,39 +1,21 @@
 package model;
 
-public class Funcionario {
-    private int id;
-    private String nome;
+public class Funcionario extends Pessoa{
     private  String cargo;
     
-    public Funcionario(int id, String nome, String cargo) {
-        this.id = id;
-        this.nome = nome;
+    public Funcionario(int id, String nome, String cpf, String cargo) {
+        super(id, nome, cpf);
         this.cargo = cargo;
     }
+
     public Funcionario() {
     }
 
-
-    public int getId() {
-        return id;
-    }
-    public void setId(int id) {
-        this.id = id;
-    }
-    public String getNome() {
-        return nome;
-    }
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
     public String getCargo() {
         return cargo;
     }
     public void setCargo(String cargo) {
         this.cargo = cargo;
     }
-
-    
-
     
 }

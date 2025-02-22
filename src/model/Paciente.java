@@ -1,28 +1,25 @@
 package model;
 
-public class Paciente {
-    private int id;
-    private String nome;
+public class Paciente extends Pessoa{
+    private String planoSaude;
 
-    public Paciente(int id, String nome) {
-        this.id = id;
-        this.nome = nome;
+    public Paciente(int id, String nome, String cpf, String planoSaude) {
+        super(id, nome, cpf);
+        this.planoSaude = planoSaude;
     }
-    
+
     public Paciente() {
     }
-    public int getId() {
-        return id;
+
+    public String getPlanoSaude() {
+        return planoSaude;
     }
-    public void setId(int id) {
-        this.id = id;
+
+    public void setPlanoSaude(String planoSaude) {
+        this.planoSaude = planoSaude;
     }
-    public String getNome() {
-        return nome;
-    }
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
+   
+   
 
     
     
